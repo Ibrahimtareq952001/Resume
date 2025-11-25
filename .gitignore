@@ -1,0 +1,16 @@
+% Source - https://stackoverflow.com/a
+% Posted by danielleontiev
+% Retrieved 2025-11-25, License - CC BY-SA 3.0
+
+.aux .bit .blg .bbl .lof .log .lot .glo .glx .gxg .gxs .idx .ilg .ind .out .url .svn .toc
+*.nav *.snm *.synctex.gz *.fdb_latexmk *.fls *.xdv
+*.run.xml *.bcf *.blx.bib
+*.pdfsync *.ps *.dvi *.synctex.gz
+*.thm *.spl
+*.vrb *.lof *.lot
+*.run.xml
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.xdv
+BasicTeX.pkg
