@@ -1,0 +1,74 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{ydnt/global//global/global/global}
+    \entry{Khan2014Incentive}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=594b5f1bba31332d81510182a1e69b10}{%
+           family={Khan},
+           familyi={K\bibinitperiod},
+           given={Amin\bibnamedelima M},
+           giveni={A\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=3b2ef5f0c41a84b9e2093d7aeb4c0687}{%
+           family={Büyüksahin},
+           familyi={B\bibinitperiod},
+           given={Ümit\bibnamedelima C.},
+           giveni={Ü\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=c4d81a3d7e1d0ec4b2809844bbed906b}{%
+           family={Freitag},
+           familyi={F\bibinitperiod},
+           given={Felix},
+           giveni={F\bibinitperiod}}}%
+      }
+      \strng{namehash}{d98c74b77e4a121fe918420fbd7eef94}
+      \strng{fullhash}{d98c74b77e4a121fe918420fbd7eef94}
+      \strng{fullhashraw}{d98c74b77e4a121fe918420fbd7eef94}
+      \strng{bibnamehash}{d98c74b77e4a121fe918420fbd7eef94}
+      \strng{authorbibnamehash}{d98c74b77e4a121fe918420fbd7eef94}
+      \strng{authornamehash}{d98c74b77e4a121fe918420fbd7eef94}
+      \strng{authorfullhash}{d98c74b77e4a121fe918420fbd7eef94}
+      \strng{authorfullhashraw}{d98c74b77e4a121fe918420fbd7eef94}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{00220000}
+      \field{journaltitle}{Journal of Computer and System Sciences}
+      \field{month}{12}
+      \field{number}{8}
+      \field{title}{{Incentive-based resource assignment and regulation for collaborative cloud services in community networks}}
+      \field{volume}{81}
+      \field{year}{2015}
+      \field{pages}{1479\bibrangedash 1495}
+      \range{pages}{17}
+      \verb{doi}
+      \verb 10.1016/j.jcss.2014.12.023
+      \endverb
+      \verb{urlraw}
+      \verb http://www.sciencedirect.com/science/article/pii/S0022000014001871 http://linkinghub.elsevier.com/retrieve/pii/S0022000014001871
+      \endverb
+      \verb{url}
+      \verb http://www.sciencedirect.com/science/article/pii/S0022000014001871%20http://linkinghub.elsevier.com/retrieve/pii/S0022000014001871
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
