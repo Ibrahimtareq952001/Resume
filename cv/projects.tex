@@ -1,169 +1,109 @@
 %-------------------------------------------------------------------------------
 %	SECTION TITLE
 %-------------------------------------------------------------------------------
-\cvsection{Courses \& Internships}
+\cvsection{Projects}
 
 %-------------------------------------------------------------------------------
 %	CONTENT
 %-------------------------------------------------------------------------------
 \begin{cventries}
 
-% ----------------------------------------------------------------
+%---------------------------------------------------------
   \cventry
-    {Information Technology Engineer} % Job title/Position
-    {Ezz Al Dekheila Steel Co. (EZDK)} % Organization
-    {Alexandria, Egypt} % Location
-    {Jul 2025} % Date(s)
+    {Graduation Project --- Multi-Tenant Cloud Reseller \& CD Platform}
+    {Contabo Cloud Portal}
+    {\href{https://github.com/Ibrahimtareq952001/contabo}{\faGithub\ GitHub}}
+    {2025 -- 2026}
     {
-      \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Gained hands-on experience with Oracle Database and ERP systems, working with Oracle E-Business Suite to manage enterprise data and processes.}
-        \item {Studied networking fundamentals and troubleshooting for core infrastructure concepts.}
-        \item {Developed and optimized database scripts using SQL to streamline data operations.}
-      \end{cvitems}
-    }
-    
-  \vspace{5mm}
-% ----------------------------------------------------------------
-  \cventry
-    {Linux Administration} % Job title/Position
-    {Information Technology Institute} % Organization
-    {} % Location
-    {Jul 2025} % Date(s)
-    {
-      \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Training on Admin I and Admin II: hands-on experience in user/group management, file permissions, and process control.}
-        \item {Practiced storage configuration, network setup, shell scripting, and basic server administration.}
-      \end{cvitems}
-    }
-    
-  \vspace{5mm}
-% ----------------------------------------------------------------
-  \cventry
-    {Microsoft Full Stack Developer Professional Certificate} % Job title/Position
-    {Microsoft x Coursera} % Organization
-    {} % Location
-    {Dec 2024} % Date(s)
-    {
-      \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Covered full-stack development, database management (SQL/NoSQL), and API design.}
-        \item {Learned security best practices, scalability and performance optimization, and DevOps techniques for deployment and monitoring.}
-      \end{cvitems}
-    }
-    
-  \vspace{5mm}
-% -------------------------------------------------------
-  \cventry
-    {Google Cybersecurity Professional} % Job title/Position
-    {Google x Coursera} % Organization
-    {} % Location
-    {Sep 2024} % Date(s)
-    {
-      \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Covered cybersecurity fundamentals: risks, threats, vulnerabilities, and mitigation techniques.}
-        \item {Gained practical experience with SIEM tools and skills in Python, Linux, and SQL.}
-      \end{cvitems}
-    }
-    
-  \vspace{5mm}
-% -------------------------------------------------------
-  \cventry
-    {SQL Injection Attacks} % Job title/Position
-    {EC-Council} % Organization
-    {} % Location
-    {Aug 2024} % Date(s)
-    {
-      \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Learned about SQL injection attacks — how malicious SQL can be injected into input fields to manipulate databases — and mitigation strategies to protect applications and data.}
-      \end{cvitems}
-    }
-    
-  \vspace{5mm}
-% -------------------------------------------------------
-  \cventry
-    {Computer Network Fundamentals} % Job title/Position
-    {MaharaTech} % Organization
-    {} % Location
-    {Aug 2024} % Date(s)
-    {
-      \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Covered computer network fundamentals and key components.}
-        \item {Compared network topologies and categories, and reviewed OSI and TCP/IP models.}
-      \end{cvitems}
-    }
-    
-  \vspace{5mm}
-% ----------------------------------------------------------------
-  \cventry
-    {CompTIA Security+} % Job title/Position
-    {NetRiders Academy} % Organization
-    {} % Location
-    {Jul 2024} % Date(s)
-    {
-      \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Studied attacks, threats and vulnerabilities, and architecture and design principles.}
-        \item {Covered operations, incident response, and governance, risk, and compliance topics.}
-      \end{cvitems}
-    }
-    
-  \vspace{5mm}
-% ----------------------------------------------------------------
-  \cventry
-    {ISC2 — Online (Self-paced)} % Job title/Position
-    {ISC2} % Organization
-    {} % Location
-    {Jul 2024} % Date(s)
-    {
-      \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Focused on security operations, cyber threat intelligence, and risk assessment.}
-        \item {Studied network security, incident response, information security, and endpoint protection.}
-        \item {Handled multiple dynamic roles and included a dashboard for system control.}
-      \end{cvitems}
-    }
-    
-  \vspace{5mm}
-% ----------------------------------------------------------------
-  \cventry
-    {CEH v12} % Job title/Position
-    {Skillsoft} % Organization
-    {} % Location
-    {Sep 2024} % Date(s)
-    {
-      \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Cybersecurity concepts, attack methodologies, and information warfare.}
-        \item {Implemented multiple roles (admin and user); admin can manage user roles.}
-        \item {Project features authentication, cinema/showtime selection, and seat selection.}
+      \begin{cvitems}
+        \item {Production-grade multi-tenant SaaS: resellers manage Contabo VPS for clients via a built-in Git-based CD pipeline (Heroku-style); three-tier RBAC (Admin $\rightarrow$ Resellers $\rightarrow$ Clients) with isolated billing, dashboards, and resource quotas.}
+        \item {\textbf{Tech:} TypeScript, React, Node.js, PostgreSQL, Docker, REST APIs}
       \end{cvitems}
     }
 
-  \vspace{5mm}
-% ----------------------------------------------------------------
+  \vspace{7mm}
+%---------------------------------------------------------
   \cventry
-    {CCNA v7} % Job title/Position
-    {Cisco Networking Academy} % Organization
-    {} % Location
-    {Sep 2023} % Date(s)
+    {Distributed Systems \& Stream Processing}
+    {IoT Weather Station Monitoring Platform}
+    {}
+    {2025}
     {
-      \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Introduction to networks, routing \& switching, enterprise networking, security, and automation.}
-        \item {Hands-on experience with Cisco routers and switches, network configuration, and troubleshooting.}
-        \item {Basic understanding of network protocols and services.}
+      \begin{cvitems}
+        \item {10-station distributed pipeline: Kafka ingestion $\rightarrow$ Kafka Streams anomaly detection $\rightarrow$ dual persistence (custom BitCask LSM store + Parquet archival) $\rightarrow$ Kubernetes orchestration; 6 Enterprise Integration Patterns applied.}
+        \item {\textbf{Tech:} Java, Kafka, Kafka Streams, Parquet, ElasticSearch, Kibana, Docker, Kubernetes}
       \end{cvitems}
     }
 
-  \vspace{5mm}
-% ----------------------------------------------------------------
+  \vspace{7mm}
+%---------------------------------------------------------
   \cventry
-    {Networking at ABC} % Job title/Position
-    {Cisco, Microsoft} % Organization
-    {} % Location
-    {Dec 2022} % Date(s)
+    {Data Engineering --- OLTP-to-OLAP Pipeline}
+    {TPC-H Data Warehouse \& Analytics Pipeline}
+    {}
+    {2025}
     {
-      \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {CCNA and MCSA fundamentals.}
-        \item {Hands-on experience with routers, switches, and network configuration.}
-        \item {Basic understanding of network protocols and troubleshooting techniques.}
+      \begin{cvitems}
+        \item {End-to-end ELT: TPC-H benchmark (22 tables, 1\,GB+) from MySQL into a star-schema warehouse processed with Apache Spark — achieved $\sim$19.5$\times$ query speedup over MySQL baseline.}
+        \item {\textbf{Tech:} MySQL, Apache NiFi, Apache Spark, Python, Apache Parquet, SQL}
       \end{cvitems}
     }
 
-% ----------------------------------------------------------------
+  \vspace{7mm}
+%---------------------------------------------------------
+  \cventry
+    {High-Performance Computing \& Parallel Programming}
+    {Reverse Time Migration --- 3D Seismic Wave Equation Solver}
+    {}
+    {2025}
+    {
+      \begin{cvitems}
+        \item {RTM algorithm for geophysical subsurface imaging: C finite-difference stencil (O(n\textsuperscript{3}$\cdot$t)) parallelized with OpenMP (7.2$\times$ on 8 cores) and MPI (14.1$\times$ on 16 cores, multi-node); cache-blocking with halo-exchange overlap.}
+        \item {\textbf{Tech:} C, OpenMP, MPI, HDF5, finite-difference methods, performance profiling}
+      \end{cvitems}
+    }
+
+  \vspace{7mm}
+%---------------------------------------------------------
+  \cventry
+    {Programming Languages \& Compilers --- Course Project}
+    {Java-to-Bytecode Compiler}
+    {}
+    {2025}
+    {
+      \begin{cvitems}
+        \item {Multi-phase Java compiler in C++: NFA$\rightarrow$DFA lexer via Thompson's construction; LL(1) parser from FIRST/FOLLOW sets and predictive parse table with leftmost derivations.}
+        \item {\textbf{Tech:} C++, finite automata, context-free grammars, LL(1) parsing, compiler design, JVM bytecode}
+      \end{cvitems}
+    }
+
+  \vspace{7mm}
+%---------------------------------------------------------
+  \cventry
+    {NLP \& Machine Learning --- Course Labs}
+    {NLP Course Labs }
+    {}
+    {2024}
+    {
+      \begin{cvitems}
+        \item {N-gram LMs + Naïve Bayes/LR emotion classifier (94\% macro-F1); Word2Vec on CONLL2003 + FFNN vs.\ HMM/Viterbi NER (9 classes); Transformer \& Bi-LSTM seq2seq NMT (French$\rightarrow$English, beam search, BLEU).}
+        \item {Q-LoRA fine-tuning of Qwen 1.5B for code generation (SFT); DPO alignment with $\beta$-sensitivity analysis. \textbf{Tech:} Python, NumPy, PyTorch, HuggingFace, PEFT, wandb}
+      \end{cvitems}
+    }
+
+  \vspace{7mm}
+%---------------------------------------------------------
+  \cventry
+    {Distributed Systems --- CS432 Labs \& Experiments}
+    {Distributed Systems Course Work}
+    {}
+    {2025}
+    {
+      \begin{cvitems}
+        \item {\textbf{RMI Graph:} Java RMI distributed system; BFS/Dijkstra with concurrent Q/A/D operations. \textbf{K-Means:} MapReduce on Hadoop \& Spark. \textbf{Cassandra:} CAP/quorum across 18+ failure scenarios (6 modes $\times$ 3 RF).}
+        \item {\textbf{Kafka vs.\ JMS:} Throughput, latency \& response-time benchmarks (10K-message medians). \textbf{Tech:} Java, RMI, Hadoop, Spark, Cassandra, Kafka, ActiveMQ, JMeter, Docker}
+      \end{cvitems}
+    }
+
+%---------------------------------------------------------
 \end{cventries}

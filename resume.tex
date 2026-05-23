@@ -5,7 +5,7 @@
 \documentclass[10pt,a4paper]{russell}
 
 % Configure page margins with geometry (class usually loads geometry)
-\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+\geometry{left=1.4cm, top=0.8cm, right=1.4cm, bottom=1.8cm, footskip=0.5cm}
 % Specify the location of the included fonts (kept as in the template)
 \fontdir[fonts/]
 
@@ -36,7 +36,7 @@
 % Available options: circle|rectangle,edge/noedge,left/right
 % \photo[rectangle,edge,right]{./examples/profile}
 \name{Ibrahim}{Tareq}
-\position{Junior Pentration Tester}
+\position{Junior Software Engineer}
 \address{Alexandria, Egypt}
 
 \mobile{(+20)1281619718}
@@ -73,6 +73,10 @@
 
 \begin{document}
 
+% Tighten section and content spacing for one-page layout
+\setlength{\acvSectionTopSkip}{1.5mm}
+\setlength{\acvSectionContentTopSkip}{1.5mm}
+
 % Print the header with above personal informations
 % Give optional argument to change alignment (C: center, L: left, R: right)
 \makecvheader
@@ -87,9 +91,11 @@
 %-------------------------------------------------------------------------------
 \input{cv/summary.tex}
 \input{cv/education.tex}
-\input{cv/experience.tex}
 \input{cv/projects.tex}
+\newpage
 \input{cv/skills.tex}
+\input{cv/experience.tex}
+
 % \input{cv/achievements.tex}
 % \input{cv/publications.tex}
 
