@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ibrahim Tareq — Software Engineer</title>
+  <meta name="description" content="Ibrahim Tareq — Computer Engineering graduate (Alexandria University, 2026). Distributed systems, full-stack SaaS, HPC, and applied ML/NLP." />
+  <meta name="author" content="Ibrahim Tareq" />
+  <meta name="theme-color" content="#0a0c12" />
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+
+  <!-- ============================================================
+       IMPORTANT: og:url and og:image MUST be absolute URLs — social
+       scrapers (LinkedIn, WhatsApp, X, Slack) cannot fetch relative
+       paths. These point at the recommended GitHub Pages deploy.
+       If you host somewhere else, update SITE_URL below to match.
+       ============================================================ -->
+  <link rel="canonical" href="https://ibrahimtareq952001.github.io/" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Ibrahim Tareq — Software Engineer" />
+  <meta property="og:description" content="Distributed Systems · Full-Stack SaaS · HPC · Applied ML/NLP — Computer Engineering, Alexandria University '26." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://ibrahimtareq952001.github.io/" />
+  <meta property="og:image" content="https://ibrahimtareq952001.github.io/og.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Ibrahim Tareq — Software Engineer" />
+
+  <!-- Twitter / X -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Ibrahim Tareq — Software Engineer" />
+  <meta name="twitter:description" content="Distributed Systems · Full-Stack SaaS · HPC · Applied ML/NLP" />
+  <meta name="twitter:image" content="https://ibrahimtareq952001.github.io/og.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Progress bar -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- Nav -->
+  <header class="nav" id="nav">
+    <a href="#hero" class="nav__logo">IT<span>.</span></a>
+    <nav class="nav__links" id="navLinks">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav__right">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme"><i class="fa-solid fa-moon"></i></button>
+      <a class="btn btn--sm" href="resume.pdf" download><i class="fa-solid fa-download"></i> Résumé</a>
+      <button class="nav__burger" id="navBurger" aria-label="Menu"><i class="fa-solid fa-bars"></i></button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="hero">
+    <div class="hero__glow"></div>
+    <div class="hero__inner">
+      <p class="hero__eyebrow"><span class="dot"></span> Available for entry-level / junior software engineering roles</p>
+      <h1 class="hero__name">Ibrahim Tareq</h1>
+      <h2 class="hero__role">
+        <span class="typed" id="typed"></span><span class="cursor">|</span>
+      </h2>
+      <p class="hero__tagline">
+        Computer Engineering graduate (Alexandria University, 2026) who builds
+        systems that scale — from distributed stream-processing pipelines to
+        full-stack SaaS, HPC solvers, and applied ML/NLP.
+      </p>
+      <div class="hero__cta">
+        <a class="btn btn--primary" href="#projects"><i class="fa-solid fa-diagram-project"></i> View Projects</a>
+        <a class="btn" href="#contact"><i class="fa-solid fa-paper-plane"></i> Get in Touch</a>
+      </div>
+      <div class="hero__socials">
+        <a href="https://github.com/Ibrahimtareq952001" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/ibrahim-tareq-aaa403223/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://medium.com/@ibrahimtarek_20588" target="_blank" rel="noopener" aria-label="Medium"><i class="fa-brands fa-medium"></i></a>
+        <a href="mailto:ibrahimtareq952@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+    </div>
+    <a href="#about" class="hero__scroll" aria-label="Scroll down"><i class="fa-solid fa-chevron-down"></i></a>
+  </section>
+
+  <main>
+    <!-- About -->
+    <section class="section" id="about">
+      <div class="section__head">
+        <span class="section__num">01</span>
+        <h2 class="section__title">About</h2>
+      </div>
+      <div class="about">
+        <div class="about__text">
+          <p>
+            I'm a Computer &amp; Systems Engineering graduate from
+            <strong>Alexandria University</strong> with hands-on experience taking
+            projects from architecture all the way to deployment. My work spans
+            <strong>distributed systems &amp; stream processing</strong> (Kafka, Spark,
+            Kubernetes), <strong>full-stack SaaS</strong> (TypeScript, React, Node.js,
+            PostgreSQL), <strong>high-performance computing</strong> (OpenMP, MPI), and
+            <strong>applied ML/NLP</strong> (PyTorch, LLM fine-tuning with Q-LoRA &amp; DPO).
+          </p>
+          <p>
+            I love the moment an abstract architecture turns into a running system.
+            I'm now looking for an entry-level software engineering role where I can
+            contribute immediately and keep growing fast.
+          </p>
+          <ul class="about__meta">
+            <li><i class="fa-solid fa-location-dot"></i> Alexandria, Egypt</li>
+            <li><i class="fa-solid fa-graduation-cap"></i> B.S. Computer &amp; Systems Engineering, 2026</li>
+            <li><i class="fa-solid fa-shield-halved"></i> Military service postponed until 28</li>
+            <li><i class="fa-solid fa-language"></i> English (B+) · Arabic (native)</li>
+          </ul>
+        </div>
+        <div class="about__stats">
+          <div class="stat"><span class="stat__num" data-target="8">0</span><span class="stat__label">Engineering Projects</span></div>
+          <div class="stat"><span class="stat__num" data-target="6">0</span><span class="stat__label">Certifications &amp; Training</span></div>
+          <div class="stat"><span class="stat__num" data-target="19" data-suffix="×">0</span><span class="stat__label">Query Speedup (Spark)</span></div>
+          <div class="stat"><span class="stat__num" data-target="95" data-suffix="%">0</span><span class="stat__label">Ethical Hacking Score</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section" id="skills">
+      <div class="section__head">
+        <span class="section__num">02</span>
+        <h2 class="section__title">Skills &amp; Tools</h2>
+      </div>
+      <div class="skills" id="skillsGrid">
+        <!-- injected by JS -->
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section" id="projects">
+      <div class="section__head">
+        <span class="section__num">03</span>
+        <h2 class="section__title">Projects</h2>
+      </div>
+      <div class="projects__filters" id="projectFilters"></div>
+      <div class="projects" id="projectsGrid">
+        <!-- injected by JS -->
+      </div>
+      <p class="projects__more">
+        <a href="https://github.com/Ibrahimtareq952001?tab=repositories" target="_blank" rel="noopener">
+          <i class="fa-brands fa-github"></i> See everything on GitHub <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </p>
+    </section>
+
+    <!-- Experience -->
+    <section class="section" id="experience">
+      <div class="section__head">
+        <span class="section__num">04</span>
+        <h2 class="section__title">Experience &amp; Training</h2>
+      </div>
+      <div class="timeline" id="timeline"></div>
+    </section>
+
+    <!-- Education -->
+    <section class="section" id="education">
+      <div class="section__head">
+        <span class="section__num">05</span>
+        <h2 class="section__title">Education</h2>
+      </div>
+      <div class="edu">
+        <div class="edu__card">
+          <div class="edu__icon"><i class="fa-solid fa-graduation-cap"></i></div>
+          <div>
+            <h3>B.S. in Computer &amp; Systems Engineering</h3>
+            <p class="edu__inst">Alexandria University, Faculty of Engineering · Alexandria, Egypt</p>
+            <p class="edu__meta">Sept 2021 — Jun 2026 · Grade: <strong>Good</strong></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section section--contact" id="contact">
+      <div class="section__head section__head--center">
+        <span class="section__num">06</span>
+        <h2 class="section__title">Let's build something</h2>
+      </div>
+      <p class="contact__lead">
+        I'm actively looking for software engineering opportunities. The fastest way
+        to reach me is email — I usually reply within a day.
+      </p>
+      <div class="contact__grid">
+        <a class="contact__card" href="mailto:ibrahimtareq952@gmail.com">
+          <i class="fa-solid fa-envelope"></i>
+          <span class="contact__label">Email</span>
+          <span class="contact__val">ibrahimtareq952@gmail.com</span>
+        </a>
+        <a class="contact__card" href="tel:+201281619718">
+          <i class="fa-solid fa-phone"></i>
+          <span class="contact__label">Phone</span>
+          <span class="contact__val">+20 128 161 9718</span>
+        </a>
+        <a class="contact__card" href="https://www.linkedin.com/in/ibrahim-tareq-aaa403223/" target="_blank" rel="noopener">
+          <i class="fa-brands fa-linkedin"></i>
+          <span class="contact__label">LinkedIn</span>
+          <span class="contact__val">ibrahim-tareq</span>
+        </a>
+        <a class="contact__card" href="https://github.com/Ibrahimtareq952001" target="_blank" rel="noopener">
+          <i class="fa-brands fa-github"></i>
+          <span class="contact__label">GitHub</span>
+          <span class="contact__val">Ibrahimtareq952001</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Ibrahim Tareq · Built with plain HTML, CSS &amp; JS.</p>
+    <div class="footer__socials">
+      <a href="https://github.com/Ibrahimtareq952001" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/ibrahim-tareq-aaa403223/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="https://medium.com/@ibrahimtarek_20588" target="_blank" rel="noopener" aria-label="Medium"><i class="fa-brands fa-medium"></i></a>
+    </div>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

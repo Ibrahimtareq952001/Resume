@@ -38,3 +38,6 @@
 
 # Large installer files
 *.pkg
+
+# Generated portfolio export (regenerate from portfolio/ site)
+Ibrahim-Tareq-Portfolio.pdf
