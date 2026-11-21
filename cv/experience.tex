@@ -1,7 +1,7 @@
 %-------------------------------------------------------------------------------
 %	SECTION TITLE
 %-------------------------------------------------------------------------------
-\cvsection{Experience \& Training}
+\cvsection{Experience}
 
 %-------------------------------------------------------------------------------
 %	CONTENT
@@ -9,72 +9,33 @@
 \begin{cventries}
 
 %---------------------------------------------------------
+% Only claim what is already built; phrase work in progress as "building" or
+% "implementing". Never say "launched" or "serving customers".
   \cventry
-    {Information Technology Engineer}
+    {Co-founder \& Founding Software Engineer}
+    {Daleelak --- Cloud ERP / E-Invoicing SaaS (Saudi market)}
+    {Alexandria, Egypt (Remote)}
+    {Oct 2026 -- Present}
+    {
+      \begin{cvitems}
+        \item {Sole engineer designing and building a multi-tenant ERP SaaS (accounting, sales/purchasing, inventory) for small businesses in Saudi Arabia; tenant isolation enforced with PostgreSQL row-level security.}
+        \item {Implementing ZATCA Phase 1 \& 2 e-invoicing: UBL XML invoices, ECDSA signing, and invoice hash chain (ICV/PIH/UUID) with server-side issuing units per branch; clearance and reporting validated against the ZATCA sandbox.}
+        \item {Designed security and audit foundations: granular RBAC, an append-only audit log enforced by database triggers, and per-unit signing keys under AES-256-GCM envelope encryption.}
+        \item {Arabic-first product with bilingual tax invoices, built with two accountants and a business partner; launch targeted for 2027.}
+        \item {\textbf{Tech:} Java, Spring Boot, PostgreSQL, Docker, React, TypeScript, Vite}
+      \end{cvitems}
+    }
+
+  \entrygap
+%---------------------------------------------------------
+  \cventry
+    {IT Intern}
     {Ezz Al Dekheila Steel Co. (EZDK)}
     {Alexandria, Egypt}
     {Jul 2025}
     {
       \begin{cvitems}
-        \item {Worked hands-on with Oracle E-Business Suite (EBS) and Oracle DB; wrote SQL scripts for data extraction, reporting, and routine data operations across production databases.}
-        \item {Assisted in diagnosing and resolving infrastructure issues across the plant network; gained practical exposure to enterprise networking fundamentals, server configuration, and hardware troubleshooting in an industrial environment.}
-      \end{cvitems}
-    }
-
-  \vspace{4mm}
-%---------------------------------------------------------
-  \cventry
-    {Cyber Security Engineer}
-    {Arabian Academy Security}
-    {Alexandria, Egypt}
-    {Jun 2024 -- Sep 2024}
-    {
-      \begin{cvitems}
-        \item {Studied and applied GRC frameworks including ISO 27001, GDPR, and PCI-DSS; conducted risk assessments and contributed to security policy documentation.}
-        \item {Hands-on practice with SIEM tools for log analysis and threat detection; performed penetration testing exercises using Kali Linux, Nmap, Burp Suite, and Metasploit; administered Active Directory environments.}
-        \item {Explored threat intelligence workflows and incident response procedures in a structured training environment.}
-      \end{cvitems}
-    }
-
-  \vspace{4mm}
-%---------------------------------------------------------
-  \cventry
-    {Ethical Hacking --- Digital Egypt Youth Program}
-    {National Institute for Telecommunication Education}
-    {}
-    {Nov 2025 -- Jan 2026}
-    {
-      \begin{cvitems}
-        \item {72-hour certified course (score: \textbf{95\%}); covered reconnaissance, network scanning, vulnerability analysis, system \& web application security, SQL injection, DoS attacks, and basic cryptography.}
-        \item {Reinforced practical offensive-security skills and deepened understanding of the full ethical hacking lifecycle — from footprinting through exploitation and reporting.}
-      \end{cvitems}
-    }
-
-  \vspace{4mm}
-%---------------------------------------------------------
-  \cventry
-    {Microsoft Full Stack Developer Professional Certificate}
-    {Microsoft $\times$ Coursera}
-    {}
-    {Dec 2024}
-    {
-      \begin{cvitems}
-        \item {Completed a structured curriculum covering full-stack development with React and Node.js, REST API design and integration, relational and NoSQL database management.}
-        \item {Applied security best practices (authentication, authorization, input validation) and DevOps fundamentals including containerization, CI/CD pipelines, and deployment monitoring.}
-      \end{cvitems}
-    }
-
-  \vspace{4mm}
-%---------------------------------------------------------
-  \cventry
-    {Linux Administration (Admin I \& II)}
-    {Information Technology Institute (ITI)}
-    {}
-    {Jul 2025}
-    {
-      \begin{cvitems}
-        \item {Covered core Linux system administration: user and group management, file permissions, process control, and storage configuration (LVM, RAID, partitioning).}
-        \item {Configured network interfaces, DNS, DHCP, and SSH; automated routine tasks with Bash shell scripting; practiced system monitoring and log analysis.}
+        \item {Wrote SQL scripts for data extraction and reporting on Oracle E-Business Suite (EBS) and Oracle DB; assisted with plant network, server, and hardware troubleshooting.}
       \end{cvitems}
     }
 

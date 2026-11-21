@@ -12,44 +12,30 @@
   \cventry
     {Graduation Project --- Multi-Tenant Cloud Reseller \& CD Platform}
     {Contabo Cloud Portal}
-    {\href{https://github.com/Ibrahimtareq952001/CloudDeploy}{\faGithub\ GitHub}}
+    {\href{https://github.com/Ibrahimtareq952001/CloudDeploy}{GitHub}}
     {2025 -- 2026}
     {
       \begin{cvitems}
-        \item {Production-grade multi-tenant SaaS: resellers manage Contabo VPS for clients via a built-in Git-based CD pipeline (Heroku-style); three-tier RBAC (Admin $\rightarrow$ Resellers $\rightarrow$ Clients) with isolated billing, dashboards, and resource quotas.}
-        \item {\textbf{Tech:} TypeScript, React, Node.js, PostgreSQL, Docker, REST APIs}
+        \item {Multi-tenant SaaS: resellers manage Contabo VPS for clients via a built-in Git-based CD pipeline (Heroku-style); three-tier RBAC (Admin $\rightarrow$ Resellers $\rightarrow$ Clients) with isolated billing and resource quotas. \textbf{Tech:} TypeScript, React, Node.js, PostgreSQL, Docker}
+        % TODO: add real numbers + a live demo link, then uncomment. Example shape:
+        % \item {Served \textbf{N} resellers / \textbf{N} client deployments; push-to-live deploy in \textbf{\textasciitilde N\,s}. \textbf{Live demo:} \href{https://...}{example.com}}
       \end{cvitems}
     }
 
-  \vspace{7mm}
+  \entrygap
 %---------------------------------------------------------
   \cventry
     {Distributed Systems \& Stream Processing}
     {IoT Weather Station Monitoring Platform}
-    {\href{https://github.com/Ibrahimtareq952001/IoT-Weather-Station-Monitoring-Platform}{\faGithub\ GitHub}}
+    {\href{https://github.com/Ibrahimtareq952001/IoT-Weather-Station-Monitoring-Platform}{GitHub}}
     {2025}
     {
       \begin{cvitems}
-        \item {10-station distributed pipeline: Kafka ingestion $\rightarrow$ Kafka Streams anomaly detection $\rightarrow$ dual persistence (custom BitCask LSM store + Parquet archival) $\rightarrow$ Kubernetes orchestration; 6 Enterprise Integration Patterns applied.}
-        \item {\textbf{Tech:} Java, Kafka, Kafka Streams, Parquet, ElasticSearch, Kibana, Docker, Kubernetes}
+        \item {10-station distributed pipeline: Kafka ingestion $\rightarrow$ Kafka Streams anomaly detection $\rightarrow$ dual persistence (custom BitCask LSM store + Parquet archival) $\rightarrow$ Kubernetes orchestration; 6 Enterprise Integration Patterns. \textbf{Tech:} Java, Elasticsearch, Kibana}
       \end{cvitems}
     }
 
-  \vspace{7mm}
-%---------------------------------------------------------
-  \cventry
-    {Data Engineering --- OLTP-to-OLAP Pipeline}
-    {TPC-H Data Warehouse \& Analytics Pipeline}
-    {\href{https://github.com/Ibrahimtareq952001/OLAP}{\faGithub\ GitHub}}
-    {2025}
-    {
-      \begin{cvitems}
-        \item {End-to-end ELT: TPC-H benchmark (22 tables, 1\,GB+) from MySQL into a star-schema warehouse processed with Apache Spark — achieved $\sim$19.5$\times$ query speedup over MySQL baseline.}
-        \item {\textbf{Tech:} MySQL, Apache NiFi, Apache Spark, Python, Apache Parquet, SQL}
-      \end{cvitems}
-    }
-
-  \vspace{7mm}
+  \entrygap
 %---------------------------------------------------------
   \cventry
     {High-Performance Computing \& Parallel Programming}
@@ -58,52 +44,36 @@
     {2025}
     {
       \begin{cvitems}
-        \item {RTM algorithm for geophysical subsurface imaging: C finite-difference stencil (O(n\textsuperscript{3}$\cdot$t)) parallelized with OpenMP (7.2$\times$ on 8 cores) and MPI (14.1$\times$ on 16 cores, multi-node); cache-blocking with halo-exchange overlap.}
-        \item {\textbf{Tech:} C, OpenMP, MPI, HDF5, finite-difference methods, performance profiling}
+        \item {RTM algorithm for geophysical subsurface imaging: C finite-difference stencil (O(n\textsuperscript{3}$\cdot$t)) parallelized with OpenMP (7.2$\times$ on 8 cores) and MPI (14.1$\times$ on 16 cores, multi-node); cache-blocking with halo-exchange overlap. \textbf{Tech:} C, OpenMP, MPI, HDF5}
       \end{cvitems}
     }
 
-  \vspace{7mm}
+  \entrygap
 %---------------------------------------------------------
   \cventry
-    {Programming Languages \& Compilers --- Course Project}
+    {Programming Languages \& Compilers}
     {Java-to-Bytecode Compiler}
-    {\href{https://github.com/Ibrahimtareq952001/Compilar-Generator}{\faGithub\ GitHub}}
+    {\href{https://github.com/Ibrahimtareq952001/Compilar-Generator}{GitHub}}
     {2025}
     {
       \begin{cvitems}
-        \item {Multi-phase Java compiler in C++: NFA$\rightarrow$DFA lexer via Thompson's construction; LL(1) parser from FIRST/FOLLOW sets and predictive parse table with leftmost derivations.}
-        \item {\textbf{Tech:} C++, finite automata, context-free grammars, LL(1) parsing, compiler design, JVM bytecode}
+        \item {Multi-phase Java compiler in C++: NFA$\rightarrow$DFA lexer via Thompson's construction; LL(1) parser from FIRST/FOLLOW sets and predictive parse table with leftmost derivations. \textbf{Tech:} C++, finite automata, LL(1) parsing}
       \end{cvitems}
     }
 
-  \vspace{7mm}
+  \entrygap
 %---------------------------------------------------------
   \cventry
-    {NLP \& Machine Learning --- Course Labs}
-    {NLP Course Labs}
-    {\href{https://github.com/Ibrahimtareq952001/Natural-Language-Processing-Labs}{\faGithub\ GitHub}}
-    {2024}
-    {
-      \begin{cvitems}
-        \item {N-gram LMs + Naïve Bayes/LR emotion classifier (94\% macro-F1); Word2Vec on CONLL2003 + FFNN vs.\ HMM/Viterbi NER (9 classes); Transformer \& Bi-LSTM seq2seq NMT (French$\rightarrow$English, beam search, BLEU).}
-        \item {Q-LoRA fine-tuning of Qwen 1.5B for code generation (SFT); DPO alignment with $\beta$-sensitivity analysis. \textbf{Tech:} Python, NumPy, PyTorch, HuggingFace, PEFT, wandb}
-      \end{cvitems}
-    }
-
-  \vspace{7mm}
-%---------------------------------------------------------
-  \cventry
-    {Distributed Systems --- CS432 Labs \& Experiments}
-    {Distributed Systems Course Work}
-    {}
+    {NLP \& Machine Learning}
+    {Natural Language Processing}
+    {\href{https://github.com/Ibrahimtareq952001/Natural-Language-Processing-Labs}{GitHub}}
     {2025}
     {
       \begin{cvitems}
-        \item {\textbf{RMI Graph:} Java RMI distributed system; BFS/Dijkstra with concurrent Q/A/D operations. \textbf{K-Means:} MapReduce on Hadoop \& Spark. \textbf{Cassandra:} CAP/quorum across 18+ failure scenarios (6 modes $\times$ 3 RF).}
-        \item {\textbf{Kafka vs.\ JMS:} Throughput, latency \& response-time benchmarks (10K-message medians). \textbf{Tech:} Java, RMI, Hadoop, Spark, Cassandra, Kafka, ActiveMQ, JMeter, Docker}
+        \item {Emotion classifier (94\% macro-F1), NER, Transformer NMT; Q-LoRA + DPO fine-tuning of Qwen 1.5B. \textbf{Tech:} Python, PyTorch, HuggingFace}
       \end{cvitems}
     }
+
 
 %---------------------------------------------------------
 \end{cventries}

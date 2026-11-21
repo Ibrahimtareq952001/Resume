@@ -5,7 +5,7 @@
 \documentclass[10pt,a4paper]{russell}
 
 % Configure page margins with geometry (class usually loads geometry)
-\geometry{left=1.4cm, top=0.8cm, right=1.4cm, bottom=1.8cm, footskip=0.5cm}
+\geometry{left=1.4cm, top=0.8cm, right=1.4cm, bottom=1.2cm, footskip=0.5cm}
 % Specify the location of the included fonts (kept as in the template)
 \fontdir[fonts/]
 
@@ -26,83 +26,94 @@
 % Set false if you don't want to highlight section with russell color
 \setbool{acvSectionColorHighlight}{true}
 
-% If you would like to change the social information separator from a pipe (|) to something else
-\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+%-------------------------------------------------------------------------------
+%	ATS-FRIENDLY TEXT EXTRACTION
+%-------------------------------------------------------------------------------
+% Embed the source text alongside each glyph run, so PDF-to-text tools
+% (and ATS parsers) read the characters that were typed rather than the glyph
+% names (e.g. Source Sans Pro's hyphen otherwise extracts as U+2011).
+\XeTeXgenerateactualtext=1
+
+\hypersetup{%
+  pdftitle={Ibrahim Tareq - Resume},
+  pdfauthor={Ibrahim Tareq},
+  pdfsubject={Junior Software Engineer},
+  pdfkeywords={Software Engineer, Backend, Full Stack, TypeScript, Node.js, React, Java, Kafka, Docker, Kubernetes}
+}
 
 %-------------------------------------------------------------------------------
 %	PERSONAL INFORMATION
-%	Comment any of the lines below if they are not required
 %-------------------------------------------------------------------------------
-% Available options: circle|rectangle,edge/noedge,left/right
-% \photo[rectangle,edge,right]{./examples/profile}
-\name{Ibrahim}{Tareq}
-\position{Junior Software Engineer}
-\address{Alexandria, Egypt}
-
-\mobile{(+20)1281619718}
-\email{ibrahimtareq952@gmail.com}
-%\dateofbirth{January 1st, 1970}
-\homepage{ibrahimtareq952001.github.io}
-% Provide full host paths so the class generates valid clickable URLs
-\github{Ibrahimtareq952001}
-% \location{Alexandria,Egypt}
-\linkedin{ibrahim-tareq-aaa403223}
-% \gitlab{gitlab-id}
-% \stackoverflow{SO-id}{SO-name}
-% \twitter{@twit}
-% \skype{skype-id}
-% \reddit{reddit-id}
-% Provide only the medium username and escape underscore to avoid math mode errors
-\medium{ibrahimtarek\_20588}
-
-% \kaggle{kaggle-id}
-% \googlescholar{googlescholar-id}{name-to-display}
-%% \firstname and \lastname will be used
-% \googlescholar{googlescholar-id}{}
-% \extrainfo{extra information}
-
-% \quote{``Simplicity is deceptively complicated."}
-
-%-------------------------------------------------------------------------------
-%	BIBLIOGRAPHY
-% If you use biblatex, enable the following and ensure your class supports biblatex.
-%\addbibresource{cv/references.bib}
-%-------------------------------------------------------------------------------
+% The header is written by hand below (see \resumeheader) instead of using the
+% class's \makecvheader: that macro sets the title in small caps and prefixes
+% each contact with a FontAwesome icon, and both turn into garbage when an ATS
+% extracts the text ("JUNiOR SOFTWARE ENGiNEER", "Ħ", "ć", ...).
+\newcommand*{\contactsep}{\quad\textbar\quad}
+\newcommand*{\contact}[3]{\textbf{#1:}~\href{#2}{#3}}
+\newcommand*{\resumeheader}{%
+  \begin{center}
+    {\fontsize{25pt}{1em}\headerfont\color{text} Ibrahim Tareq}\\[2.5mm]
+    {\fontsize{11pt}{1em}\bodyfont\color{russell} Junior Software Engineer}\\[1.8mm]
+    {\fontsize{9pt}{1em}\bodyfont\color{darktext}
+      Alexandria, Egypt\quad\textbullet\quad\textbf{Open to relocation}\quad\textbullet\quad\textbf{Available immediately}}\\[1.8mm]
+    {\fontsize{8pt}{1em}\headerfont\color{text}
+      \contact{Phone}{tel:+201281619718}{+20 128 161 9718}\contactsep
+      \contact{Email}{mailto:ibrahimtareq952@gmail.com}{ibrahimtareq952@gmail.com}\contactsep
+      \contact{Portfolio}{https://ibrahimtareq952001.github.io}{ibrahimtareq952001.github.io}\\[1.2mm]
+      \contact{GitHub}{https://github.com/Ibrahimtareq952001}{github.com/Ibrahimtareq952001}\contactsep
+      \contact{LinkedIn}{https://www.linkedin.com/in/ibrahimtareq9}{linkedin.com/in/ibrahimtareq9}\contactsep
+      \contact{Medium}{https://medium.com/@ibrahimtarek_20588}{medium.com/@ibrahimtarek\_20588}}
+  \end{center}
+  \vspace{-2mm}%
+}
 
 \usepackage{enumitem}
 
+% An entry with no description: unlike \cventry with an empty 5th argument,
+% it doesn't leave a blank row underneath.
+% Usage: \cvshortentry{<position>}{<title>}{<location>}{<date>}
+\newcommand*{\cvshortentry}[4]{%
+  \vspace{-2.0mm}%
+  \setlength\tabcolsep{0pt}%
+  \setlength{\extrarowheight}{0pt}%
+  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{\textwidth - 4.5cm} R{4.5cm}}
+    \entrytitlestyle{#2} & \entrylocationstyle{#3} \\
+    \entrypositionstyle{#1} & \entrydatestyle{#4} \\
+  \end{tabular*}%
+  \vspace{-4.0mm}% same as the end of cvitems, so every section ends alike
+}
+
+% Space between two entries in a section. The class starts each entry with
+% -2mm and ends each bullet list with -4mm, so this has to cover those first.
+\newcommand*{\entrygap}{\vspace{6mm}}
+
+% Bullet text at 10pt (class default 10.5pt) so the page has room to breathe
+\renewcommand*{\descriptionstyle}[1]{{\fontsize{10pt}{1em}\bodyfontlight\upshape\color{text} #1}}
+
 \begin{document}
 
-% Tighten section and content spacing for one-page layout
-\renewcommand{\acvSectionTopSkip}{1.5mm}
+% Section and content spacing for a one-page layout
+\renewcommand{\acvSectionTopSkip}{4mm}
 \renewcommand{\acvSectionContentTopSkip}{1.5mm}
 
-% Print the header with above personal informations
-% Give optional argument to change alignment (C: center, L: left, R: right)
-\makecvheader
+\resumeheader
 
-% Print the footer with 3 arguments (<left>, <center>, <right>)
-% Leave any of these blank if they are not needed
-\makecvfooter{}{}{\thepage}
+% Single-page resume: no page number in the footer
+\makecvfooter{}{}{}
 
 %-------------------------------------------------------------------------------
 %	CV/RESUME CONTENT
 %	Each section is imported separately, open each file in turn to modify content
 %-------------------------------------------------------------------------------
-\input{cv/summary.tex}
+%\input{cv/summary.tex}
 \input{cv/education.tex}
-\input{cv/projects.tex}
-\newpage
-\input{cv/skills.tex}
 \input{cv/experience.tex}
-
+\input{cv/projects.tex}
+\input{cv/certifications.tex}
+\input{cv/skills.tex}
+% \input{cv/languages.tex}   % folded into Skills as the "Spoken" row
 % \input{cv/achievements.tex}
 % \input{cv/publications.tex}
-
-\input{cv/interests.tex}
-\input{cv/languages.tex}
-
-% removed \vspace*{\fill} to avoid pushing content to an extra page
-% \centering{\textbf{References available upon request.}}
+% \input{cv/interests.tex}   % cut to keep the resume on one page
 %-------------------------------------------------------------------------------
 \end{document}
